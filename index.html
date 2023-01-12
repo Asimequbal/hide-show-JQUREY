@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery HomeWork</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js" integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+    <style>
+        div{
+            border: 2px solid red;
+            width: 50%;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="class1">Wlecome to the Jquery Classes1</h1>
+        <button class="disabled">Hide</button>
+        <button class="disabled1">Show</button>
+    </div>
+    <div>
+        <h1 class="class2">Wlecome to the Jquery Classes2</h1>
+        <button class="disabled3">Hide</button>
+        <button class="disabled4">Show</button>
+    </div>
+    <div>
+        <h1 class="class3">Wlecome to the Jquery Classes3</h1>
+        <button class="disabled5">Hide</button>
+        <button class="disabled6">Show</button>
+    </div>
+
+    <script>
+        
+        $(document).ready(function(){
+        $('.disabled').click(function(){
+            $('.class1').hide()
+
+            $('.disabled1').click(function(){
+                $('.class1').show()
+            });
+    
+        });
+
+
+        $('.disabled3').click(function(){
+            $('.class2').hide()
+
+            $('.disabled4').click(function(){
+                $('.class2').show()
+            });
+    
+        });
+
+        $('.disabled5').click(function(){
+            $('.class3').hide()
+
+            $('.disabled6').click(function(){
+                $('.class3').show()
+            });
+    
+        });
+        
+        });
+    </script>
+
+
+</body>
+</html>
